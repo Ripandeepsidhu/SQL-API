@@ -5,6 +5,15 @@ function App() {
   return (
     <main className={styles.main}>
       <img src={sqlLogo} alt="" className={styles.icon}/>
+      <h3>Generate SQL with AI</h3>
+
+      <form>
+        <input 
+          type="text"
+          name="query-description" 
+          placeholder="Describe your query"/>
+          <input type="submit" value="Generate query" />
+      </form>
     </main>
   )
 }
